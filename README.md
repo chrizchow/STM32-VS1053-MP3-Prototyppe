@@ -9,6 +9,7 @@ STM32 Standard Peripheral Library - A library controlling different kinds of per
 
 ## Hardware Configuration
 VS1053: Attached to STM32's SPI1.
+
 SD Car: Attached to STM32's SDIO.
 
 # Contribution
