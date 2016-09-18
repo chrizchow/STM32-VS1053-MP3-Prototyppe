@@ -1,0 +1,774 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V5.40.5.51622/W32 for ARM              11/May/2015  23:30:09 #
+# Copyright (C) 2007-2009 IAR Systems AB.                                     #
+#                                                                             #
+#    Output file  =  C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\S #
+#                    TM3210E debug\Exe\STM3210E-EVAL.out                      #
+#    Map file     =  C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\S #
+#                    TM3210E debug\List\STM3210E-EVAL.map                     #
+#    Command line =  "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\VS10XX.o"                             #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\core_cm3.o"                           #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\delay.o"                              #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\diskio.o"                             #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\ff.o" "C:\Users\Chriz\Desktop\5678BPH #
+#                    KUSTinfo\project\ewarmv5\STM3210E debug\Obj\lcd.o"       #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\main.o" "C:\Users\Chriz\Desktop\5678B #
+#                    PHKUSTinfo\project\ewarmv5\STM3210E debug\Obj\misc.o"    #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\sdcard.o"                             #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\spi.o" "C:\Users\Chriz\Desktop\5678BP #
+#                    HKUSTinfo\project\ewarmv5\STM3210E                       #
+#                    debug\Obj\startup_stm32f10x_hd.o"                        #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32_eval.o"                         #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32f10x_dma.o"                      #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32f10x_fsmc.o"                     #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32f10x_gpio.o"                     #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32f10x_it.o"                       #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32f10x_rcc.o"                      #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32f10x_sdio.o"                     #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32f10x_spi.o"                      #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\stm32f10x_usart.o"                    #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Obj\system_stm32f10x.o" -o                #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\Exe\STM3210E-EVAL.out" --map              #
+#                    "C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\ #
+#                    STM3210E debug\List\STM3210E-EVAL.map" --config          #
+#                    C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\S #
+#                    TM32F10x_FLASH.icf --semihosting --entry                 #
+#                    __iar_program_start                                      #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+__endian      = little
+__thumb_aware = enabled
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0807ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2000ffff] {
+          rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x130
+  .intvec            ro code  0x08000000   0x130  startup_stm32f10x_hd.o [1]
+                            - 0x08000130   0x130
+
+"P1":                                     0x6144
+  .text              ro code  0x08000130  0x14f8  sdcard.o [1]
+  .text              ro code  0x08001628  0x100e  xprintffull.o [3]
+  .text              ro code  0x08002638   0xff6  ff.o [1]
+  .text              ro code  0x08003630   0x2ba  lcd.o [1]
+  .text              ro code  0x080038ec   0x298  VS10XX.o [1]
+  .text              ro code  0x08003b84   0x246  DblDiv.o [4]
+  .text              ro code  0x08003dcc   0x1d0  main.o [1]
+  .text              ro code  0x08003f9c   0x1a2  DblMul.o [4]
+  .text              ro code  0x08004140   0x17e  DblSub.o [4]
+  .text              ro code  0x080042c0   0x172  stm32f10x_gpio.o [1]
+  .text              ro code  0x08004434   0x154  diskio.o [1]
+  .text              ro code  0x08004588   0x13c  stm32f10x_sdio.o [1]
+  .text              ro code  0x080046c4   0x12e  I64DivMod.o [4]
+  .rodata            const    0x080047f4   0x118  diskio.o [1]
+  .text              ro code  0x0800490c   0x10c  xdscale.o [3]
+  .rodata            const    0x08004a18    0xf0  main.o [1]
+  .text              ro code  0x08004b08    0xf0  stm32f10x_rcc.o [1]
+  .text              ro code  0x08004bf8    0xe8  system_stm32f10x.o [1]
+  .text              ro code  0x08004ce0    0xe6  DblAdd.o [4]
+  .text              ro code  0x08004dc8    0xdc  stm32f10x_fsmc.o [1]
+  .text              ro code  0x08004ea4    0xcc  spi.o [1]
+  .text              ro code  0x08004f70    0xbc  xxmemxmalloc.o [3]
+  .text              ro code  0x0800502c    0xb4  xdnorm.o [3]
+  .text              ro code  0x080050e0    0xa6  stm32f10x_usart.o [1]
+  .text              ro code  0x08005186    0x94  packbits_init2.o [4]
+  .text              ro code  0x0800521c    0x90  stm32_eval.o [1]
+  .text              ro code  0x080052ac    0x8c  xsyslock.o [3]
+  .text              ro code  0x08005338    0x88  xxmemxfree.o [3]
+  .text              ro code  0x080053c0    0x84  stm32f10x_dma.o [1]
+  .text              ro code  0x08005444    0x7c  misc.o [1]
+  .text              ro code  0x080054c0    0x70  ABImemcpy.o [4]
+  .text              ro code  0x08005530    0x6c  cppinit.o [3]
+  .text              ro code  0x0800559c    0x66  ABImemset.o [4]
+  .text              ro code  0x08005604    0x58  memchr.o [4]
+  .text              ro code  0x0800565c    0x56  DblToI32.o [4]
+  .text              ro code  0x080056b4    0x54  xencoding_sb.o [3]
+  .text              ro code  0x08005708    0x50  delay.o [1]
+  .rodata            const    0x08005758    0x48  xlocale_c.o [3]
+  .text              ro code  0x080057a0    0x38  ABImemset48.o [4]
+  .text              ro code  0x080057d8    0x36  strlen.o [4]
+  .text              ro code  0x08005810    0x30  MtxWrapper.o [3]
+  .text              ro code  0x08005840    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x08005870    0x2e  DblCmpGe.o [4]
+  .text              ro code  0x080058a0    0x2e  I32ToDbl.o [4]
+  .text              ro code  0x080058d0    0x28  xgetmemchunk.o [3]
+  .rodata            const    0x080058f8    0x24  diskio.o [1]
+  .iar.init_table    const    0x0800591c    0x2c  - Linker created -
+  .rodata            const    0x08005948    0x20  diskio.o [1]
+  .text              ro code  0x08005968    0x20  printf.o [3]
+  .text              ro code  0x08005988    0x20  data_init2.o [4]
+  .text              ro code  0x080059a8    0x20  xmbtowc.o [3]
+  .text              ro code  0x080059c8    0x1c  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x080059e4    0x1c  iarwstd.o [5]
+  .text              ro code  0x08005a00    0x1a  xwctomb.o [3]
+  .text              ro code  0x08005a1a    0x1a  zero_init2.o [4]
+  .rodata            const    0x08005a34    0x18  stm32_eval.o [1]
+  .text              ro code  0x08005a4c    0x18  cmain.o [4]
+  .text              ro code  0x08005a64    0x16  strchr.o [4]
+  .text              ro code  0x08005a7a    0x16  stm32f10x_it.o [1]
+  .text              ro code  0x08005a90    0x16  xprout.o [3]
+  .text              ro code  0x08005aa8    0x14  localeconv.o [3]
+  .text              ro code  0x08005abc    0x14  exit.o [5]
+  .text              ro code  0x08005ad0    0x14  setlocale.o [3]
+  .rodata            const    0x08005ae4    0x10  ff.o [1]
+  .rodata            const    0x08005af4    0x10  xprintffull.o [3]
+  .text              ro code  0x08005b04     0xe  cexit.o [4]
+  .text              ro code  0x08005b12     0xe  div.o [3]
+  .text              ro code  0x08005b20     0xc  putchar.o [3]
+  .text              ro code  0x08005b2c     0xa  xmbcurmax.o [3]
+  .rodata            const    0x08005b38     0x8  xprintffull.o [3]
+  .rodata            const    0x08005b40     0x8  localeconv.o [3]
+  .rodata            const    0x08005b48     0x8  localeconv.o [3]
+  .rodata            const    0x08005b50     0x8  xencoding_sb.o [3]
+  .rodata            const    0x08005b58     0x8  xencoding_sb.o [3]
+  .rodata            const    0x08005b60     0x8  xlocale_c.o [3]
+  .rodata            const    0x08005b68     0x8  xlocale_c.o [3]
+  .text              ro code  0x08005b70     0x6  ABImemclr4.o [4]
+  .text              ro code  0x08005b78     0x6  ABImemclr.o [4]
+  .text              ro code  0x08005b7e     0x6  exit.o [3]
+  .text              ro code  0x08005b84     0x2  I64DivZer.o [4]
+  .text              ro code  0x08005b86     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005b8a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005b8e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005b92     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005b96     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005b9a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005b9e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005ba2     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005ba6     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005baa     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bae     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bb2     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bb6     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bba     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bbe     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bc2     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bc6     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bca     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bce     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bd2     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bd6     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bda     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bde     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005be2     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005be6     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bea     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bee     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bf2     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bf6     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bfa     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005bfe     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c02     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c06     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c0a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c0e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c12     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c16     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c1a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c1e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c22     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c26     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c2a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c2e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c32     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c36     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c3a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c3e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c42     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c46     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c4a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c4e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c52     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c56     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c5a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c5e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c62     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c66     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c6a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c6e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c72     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c76     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c7a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c7e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c82     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c86     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c8a     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c8e     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c92     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08005c96     0x4  startup_stm32f10x_hd.o [1]
+  .rodata            const    0x08005c9a     0x2  localeconv.o [3]
+  .rodata            const    0x08005c9c     0x2  xlocale_c.o [3]
+  .rodata            const    0x08005c9e     0x1  localeconv.o [3]
+  .rodata            const    0x08005c9f     0x1  setlocale.o [3]
+  .rodata            const    0x08005ca0     0x1  xlocale_c.o [3]
+  Initializer bytes  ro data  0x08005ca1   0x5d3  <for P2 s0>
+                            - 0x08006274  0x6144
+
+"P2", part 1 of 3:                         0x7d4
+  CSTACK                      0x20000000   0x400  <Block>
+    CSTACK           uninit   0x20000000   0x400  <Block tail>
+  HEAP                        0x20000400   0x200  <Block>
+    HEAP             uninit   0x20000400   0x200  <Block tail>
+  .iar.dynexit                0x20000600   0x1d4  <Block>
+    .iar.dynexit     uninit   0x20000600     0xc  cppinit.o [3]
+    .iar.dynexit     uninit   0x2000060c   0x1c8  <Block tail>
+                            - 0x200007d4   0x7d4
+
+"P2", part 2 of 3:                          0xc0
+  .bss               zero     0x200007d4    0x50  xfiles.o [3]
+  .bss               zero     0x20000824    0x18  sdcard.o [1]
+  .bss               zero     0x2000083c    0x14  xsyslock.o [3]
+  .bss               zero     0x20000850    0x10  main.o [1]
+  .bss               zero     0x20000860     0x8  diskio.o [1]
+  .bss               zero     0x20000868     0x8  ff.o [1]
+  .bss               zero     0x20000870     0x8  xxmemxmalloc.o [3]
+  .bss               zero     0x20000878     0x4  xgetmemchunk.o [3]
+  .bss               zero     0x2000087c     0x4  MtxWrapper.o [3]
+  .bss               zero     0x20000880     0x4  MtxWrapper.o [3]
+  .bss               zero     0x20000884     0x4  MtxWrapper.o [3]
+  .bss               zero     0x20000888     0x4  MtxWrapper.o [3]
+  .bss               zero     0x2000088c     0x4  iarwstd.o [5]
+  .bss               zero     0x20000890     0x4  delay.o [1]
+                            - 0x20000894    0xc0
+
+"P2", part 3 of 3:                         0xe28
+  P2 s0                       0x20000894   0xe28  <Init block>
+    .data            inited   0x20000894   0x800  lcd.o [1]
+    .data            inited   0x20001094   0x47c  main.o [1]
+    .data            inited   0x20001510    0x84  setlocale.o [3]
+    .data            inited   0x20001594    0x74  sdcard.o [1]
+    .data            inited   0x20001608    0x4c  localeconv.o [3]
+    .data            inited   0x20001654    0x40  xfiles.o [3]
+    .data            inited   0x20001694    0x14  stm32f10x_rcc.o [1]
+    .data            inited   0x200016a8    0x10  stm32_eval.o [1]
+    .data            inited   0x200016b8     0x4  cppinit.o [3]
+                            - 0x200016bc   0xe28
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init2)
+    1 destination range, total size 0xc0:
+          0x200007d4   0xc0
+
+Copy/packbits (__iar_packbits_init2)
+    1 source range, total size 0x5d3 (41% of destination):
+          0x08005ca1  0x5d3
+    1 destination range, total size 0xe28:
+          0x20000894  0xe28
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\STM3210E debug\Obj: [1]
+    VS10XX.o                    664
+    delay.o                      80                 4
+    diskio.o                    340      348        8
+    ff.o                      4 086       16        8
+    lcd.o                       698      842    2 048
+    main.o                      464      712    1 164
+    misc.o                      124
+    sdcard.o                  5 368       47      140
+    spi.o                       204
+    startup_stm32f10x_hd.o      608
+    stm32_eval.o                144       31       16
+    stm32f10x_dma.o             132
+    stm32f10x_fsmc.o            220
+    stm32f10x_gpio.o            370
+    stm32f10x_it.o               22
+    stm32f10x_rcc.o             240        8       20
+    stm32f10x_sdio.o            316
+    stm32f10x_usart.o           166
+    system_stm32f10x.o          232
+    -------------------------------------------------
+    Total:                   14 478    2 004    3 408
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tl_if.a: [3]
+    MtxWrapper.o                 48                16
+    cppinit.o                   108        2       16
+    div.o                        14
+    exit.o                        6
+    localeconv.o                 20       51       76
+    printf.o                     32
+    putchar.o                    12
+    setlocale.o                  20       56      132
+    xdnorm.o                    180
+    xdscale.o                   268
+    xencoding_sb.o               84       16
+    xfiles.o                              26      144
+    xgetmemchunk.o               40                 4
+    xlocale_c.o                           91
+    xmbcurmax.o                  10
+    xmbtowc.o                    32
+    xprintffull.o             4 110       24
+    xprout.o                     22
+    xsyslock.o                  140                20
+    xwctomb.o                    26
+    xxmemxfree.o                136
+    xxmemxmalloc.o              188                 8
+    -------------------------------------------------
+    Total:                    5 496      266      416
+
+rt7M_tl.a: [4]
+    ABImemclr.o                   6
+    ABImemclr4.o                  6
+    ABImemcpy.o                 112
+    ABImemset.o                 102
+    ABImemset48.o                56
+    DblAdd.o                    230
+    DblCmpGe.o                   46
+    DblCmpLe.o                   46
+    DblDiv.o                    582
+    DblMul.o                    418
+    DblSub.o                    382
+    DblToI32.o                   86
+    I32ToDbl.o                   46
+    I64DivMod.o                 302
+    I64DivZer.o                   2
+    cexit.o                      14
+    cmain.o                      24
+    data_init2.o                 32
+    memchr.o                     88
+    packbits_init2.o            148
+    strchr.o                     22
+    strlen.o                     54
+    zero_init2.o                 26
+    -------------------------------------------------
+    Total:                    2 830
+
+shb_l.a: [5]
+    exit.o                       20
+    iarwstd.o                    28                 4
+    -------------------------------------------------
+    Total:                       48                 4
+
+    Gaps                         34        4
+    Linker created                        44    1 992
+-----------------------------------------------------
+    Grand Total:             22 886    2 318    5 820
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.dynexit$$Base      0x20000600          --   Gb  - Linker created -
+.iar.dynexit$$Limit     0x200007d4          --   Gb  - Linker created -
+ADC1_2_IRQHandler       0x08005bf3         Code  Wk  startup_stm32f10x_hd.o [1]
+ADC3_IRQHandler         0x08005c67         Code  Wk  startup_stm32f10x_hd.o [1]
+ADCPrescTable           0x200016a4    0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x20001694   0x10  Data  Lc  stm32f10x_rcc.o [1]
+BusFault_Handler        0x08005a81    0x2  Code  Gb  stm32f10x_it.o [1]
+CAN1_RX1_IRQHandler     0x08005bff         Code  Wk  startup_stm32f10x_hd.o [1]
+CAN1_SCE_IRQHandler     0x08005c03         Code  Wk  startup_stm32f10x_hd.o [1]
+CID_Tab                 0x200015d4   0x10  Data  Lc  sdcard.o [1]
+COM_PORT                0x200016b0    0x8  Data  Gb  stm32_eval.o [1]
+COM_POR_CLK             0x08005a44    0x8  Data  Gb  stm32_eval.o [1]
+COM_RX_PIN              0x08005a38    0x4  Data  Gb  stm32_eval.o [1]
+COM_TX_PIN              0x08005a34    0x4  Data  Gb  stm32_eval.o [1]
+COM_USART               0x200016a8    0x8  Data  Gb  stm32_eval.o [1]
+COM_USART_CLK           0x08005a3c    0x8  Data  Gb  stm32_eval.o [1]
+CSD_Tab                 0x200015c4   0x10  Data  Lc  sdcard.o [1]
+CSTACK$$Base            0x20000000          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000400          --   Gb  - Linker created -
+CardType                0x200015e4    0x4  Data  Lc  sdcard.o [1]
+ChineseTable            0x20000894  0x800  Data  Gb  lcd.o [1]
+CmdResp1Error           0x080011bd   0xf0  Code  Lc  sdcard.o [1]
+DMA1_Channel1_IRQHandler
+                        0x08005bd7         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel2_IRQHandler
+                        0x08005bdb         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel3_IRQHandler
+                        0x08005bdf         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel4_IRQHandler
+                        0x08005be3         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel5_IRQHandler
+                        0x08005be7         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel6_IRQHandler
+                        0x08005beb         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel7_IRQHandler
+                        0x08005bef         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA2_Channel1_IRQHandler
+                        0x08005c8b         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA2_Channel2_IRQHandler
+                        0x08005c8f         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA2_Channel3_IRQHandler
+                        0x08005c93         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA2_Channel4_5_IRQHandler
+                        0x08005c97         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA_ClearFlag           0x08005419    0xc  Code  Gb  stm32f10x_dma.o [1]
+DMA_Cmd                 0x080053fd   0x12  Code  Gb  stm32f10x_dma.o [1]
+DMA_GetFlagStatus       0x0800540f    0xa  Code  Gb  stm32f10x_dma.o [1]
+DMA_Init                0x080053c1   0x3c  Code  Gb  stm32f10x_dma.o [1]
+DebugMon_Handler        0x08005a85    0x2  Code  Gb  stm32f10x_it.o [1]
+DestBuffer              0x200015fc    0x4  Data  Gb  sdcard.o [1]
+DeviceMode              0x200015ec    0x4  Data  Lc  sdcard.o [1]
+DirInf                  0x200014f4   0x1c  Data  Gb  main.o [1]
+DtorRecArray            0x20000600    0xc  Data  Lc  cppinit.o [3]
+EXTI0_IRQHandler        0x08005bc3         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI15_10_IRQHandler    0x08005c4b         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI1_IRQHandler        0x08005bc7         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI2_IRQHandler        0x08005bcb         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI3_IRQHandler        0x08005bcf         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI4_IRQHandler        0x08005bd3         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI9_5_IRQHandler      0x08005c07         Code  Wk  startup_stm32f10x_hd.o [1]
+FLASH_IRQHandler        0x08005bbb         Code  Wk  startup_stm32f10x_hd.o [1]
+FSMC_IRQHandler         0x08005c6b         Code  Wk  startup_stm32f10x_hd.o [1]
+FSMC_NORSRAMCmd         0x08004e85   0x14  Code  Gb  stm32f10x_fsmc.o [1]
+FSMC_NORSRAMInit        0x08004dc9   0xb4  Code  Gb  stm32f10x_fsmc.o [1]
+FatFs                   0x2000086c    0x4  Data  Lc  ff.o [1]
+FindSCR                 0x080014c9  0x160  Code  Lc  sdcard.o [1]
+Fsid                    0x20000868    0x2  Data  Lc  ff.o [1]
+GPIO_DeInit             0x080042c1   0xb4  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_Init               0x08004375   0xbe  Code  Gb  stm32f10x_gpio.o [1]
+HEAP$$Base              0x20000400          --   Gb  - Linker created -
+HEAP$$Limit             0x20000600          --   Gb  - Linker created -
+HardFault_Handler       0x08005a7d    0x2  Code  Gb  stm32f10x_it.o [1]
+I2C1_ER_IRQHandler      0x08005c2b         Code  Wk  startup_stm32f10x_hd.o [1]
+I2C1_EV_IRQHandler      0x08005c27         Code  Wk  startup_stm32f10x_hd.o [1]
+I2C2_ER_IRQHandler      0x08005c33         Code  Wk  startup_stm32f10x_hd.o [1]
+I2C2_EV_IRQHandler      0x08005c2f         Code  Wk  startup_stm32f10x_hd.o [1]
+IsCardProgramming       0x0800136d  0x15c  Code  Lc  sdcard.o [1]
+LCD_Clear               0x080037c7   0x46  Code  Gb  lcd.o [1]
+LCD_CtrlLinesConfig     0x08003815   0x80  Code  Gb  lcd.o [1]
+LCD_DrawChar            0x08003631   0x7c  Code  Gb  lcd.o [1]
+LCD_DrawString          0x080036ad   0x36  Code  Gb  lcd.o [1]
+LCD_FSMCConfig          0x08003895   0x56  Code  Gb  lcd.o [1]
+Mass_Block_Count        0x20000864    0x4  Data  Gb  diskio.o [1]
+Mass_Block_Size         0x20000860    0x4  Data  Gb  diskio.o [1]
+MemManage_Handler       0x08005a7f    0x2  Code  Gb  stm32f10x_it.o [1]
+NMI_Handler             0x08005a7b    0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Configuration      0x08003f75   0x28  Code  Gb  main.o [1]
+NVIC_Init               0x08005455   0x68  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x08005445   0x10  Code  Gb  misc.o [1]
+NumberOfBytes           0x20001604    0x4  Data  Gb  sdcard.o [1]
+PVD_IRQHandler          0x08005baf         Code  Wk  startup_stm32f10x_hd.o [1]
+PendSV_Handler          0x08005a89    0x2  Code  Gb  stm32f10x_it.o [1]
+RCA                     0x200015e8    0x4  Data  Lc  sdcard.o [1]
+RCC_AHBPeriphClockCmd   0x08004b99   0x18  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x08004bc9   0x18  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08004bb1   0x18  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphResetCmd  0x08004be1   0x18  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq       0x08004b09   0x8c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_IRQHandler          0x08005bbf         Code  Wk  startup_stm32f10x_hd.o [1]
+RTCAlarm_IRQHandler     0x08005c4f         Code  Wk  startup_stm32f10x_hd.o [1]
+RTC_IRQHandler          0x08005bb7         Code  Wk  startup_stm32f10x_hd.o [1]
+Region$$Table$$Base     0x0800591c          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08005948          --   Gb  - Linker created -
+SDEnWideBus             0x080012ad   0xc0  Code  Lc  sdcard.o [1]
+SDIO_ClearFlag          0x080046a3    0x2  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_ClearITPendingBit  0x080046b9         Code  Gb  stm32f10x_sdio.o [1]
+SDIO_ClockCmd           0x080045d1    0xc  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_CmdInitStructure   0x200015b0   0x14  Data  Gb  sdcard.o [1]
+SDIO_DMACmd             0x08004615    0xc  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_DataConfig         0x08004669   0x28  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_DataInitStructure  0x20001598   0x18  Data  Gb  sdcard.o [1]
+SDIO_DeInit             0x08004589   0x20  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetCommandResponse
+                        0x08004645    0xc  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetFlagStatus      0x080046a1    0x2  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetITStatus        0x080046a5         Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetPowerState      0x080045ef    0xa  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetResponse        0x08004651   0x18  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_IRQHandler         0x08005a8d    0x4  Code  Gb  stm32f10x_it.o [1]
+SDIO_ITConfig           0x080045fd   0x18  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_Init               0x080045a9   0x28  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_InitStructure      0x20000824   0x18  Data  Gb  sdcard.o [1]
+SDIO_ReadData           0x08004691    0x6  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_SendCommand        0x08004621   0x24  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_SetPowerState      0x080045dd    0xc  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_WriteData          0x08004697    0x6  Code  Gb  stm32f10x_sdio.o [1]
+SD_EnableWideBusOperation
+                        0x0800076d   0x72  Code  Gb  sdcard.o [1]
+SD_GetCardInfo          0x080004e7  0x286  Code  Gb  sdcard.o [1]
+SD_Init                 0x08000131   0x98  Code  Gb  sdcard.o [1]
+SD_InitializeCards      0x08000375  0x172  Code  Gb  sdcard.o [1]
+SD_PowerON              0x080001c9  0x1ac  Code  Gb  sdcard.o [1]
+SD_ProcessIRQSrc        0x08001015  0x1a8  Code  Gb  sdcard.o [1]
+SD_ReadBlock            0x08000829  0x244  Code  Gb  sdcard.o [1]
+SD_ReadMultiBlocks      0x08000a6d  0x280  Code  Gb  sdcard.o [1]
+SD_SelectDeselect       0x08000801   0x28  Code  Gb  sdcard.o [1]
+SD_SetDeviceMode        0x080007e5   0x1c  Code  Gb  sdcard.o [1]
+SD_StopTransfer         0x08000fe9   0x22  Code  Gb  sdcard.o [1]
+SD_WriteBlock           0x08000d01  0x2d4  Code  Gb  sdcard.o [1]
+SPI1_IRQHandler         0x08005c37         Code  Wk  startup_stm32f10x_hd.o [1]
+SPI2_IRQHandler         0x08005c3b         Code  Wk  startup_stm32f10x_hd.o [1]
+SPI3_IRQHandler         0x08005c77         Code  Wk  startup_stm32f10x_hd.o [1]
+SPIx_Init               0x08004ea5   0x88  Code  Gb  spi.o [1]
+SPIx_ReadWriteByte      0x08004f55   0x1c  Code  Gb  spi.o [1]
+SPIx_SetSpeed           0x08004f2d   0x22  Code  Gb  spi.o [1]
+STM3210E_LCD_Init       0x08003735   0x92  Code  Gb  lcd.o [1]
+STM_EVAL_COMInit        0x0800521d   0x90  Code  Gb  stm32_eval.o [1]
+SVC_Handler             0x08005a87    0x2  Code  Gb  stm32f10x_it.o [1]
+SrcBuffer               0x200015f8    0x4  Data  Gb  sdcard.o [1]
+Status                  0x20001094    0x1  Data  Gb  main.o [1]
+StopCondition           0x200015f4    0x4  Data  Lc  sdcard.o [1]
+SysTick_Handler         0x08005a8b    0x2  Code  Gb  stm32f10x_it.o [1]
+SystemInit              0x08004bf9   0xe8  Code  Gb  system_stm32f10x.o [1]
+SystemInit_ExtMemCtl    0x080059c9         Code  Wk  startup_stm32f10x_hd.o [1]
+TAMPER_IRQHandler       0x08005bb3         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM1_BRK_IRQHandler     0x08005c0b         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM1_CC_IRQHandler      0x08005c17         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM1_TRG_COM_IRQHandler
+                        0x08005c13         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM1_UP_IRQHandler      0x08005c0f         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM2_IRQHandler         0x08005c1b         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM3_IRQHandler         0x08005c1f         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM4_IRQHandler         0x08005c23         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM5_IRQHandler         0x08005c73         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM6_IRQHandler         0x08005c83         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM7_IRQHandler         0x08005c87         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM8_BRK_IRQHandler     0x08005c57         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM8_CC_IRQHandler      0x08005c63         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM8_TRG_COM_IRQHandler
+                        0x08005c5f         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM8_UP_IRQHandler      0x08005c5b         Code  Wk  startup_stm32f10x_hd.o [1]
+TotalNumberOfBytes      0x200015f0    0x4  Data  Lc  sdcard.o [1]
+TransferEnd             0x20001600    0x4  Data  Gb  sdcard.o [1]
+TransferError           0x20001594    0x1  Data  Gb  sdcard.o [1]
+UART4_IRQHandler        0x08005c7b         Code  Wk  startup_stm32f10x_hd.o [1]
+UART5_IRQHandler        0x08005c7f         Code  Wk  startup_stm32f10x_hd.o [1]
+USART1_IRQHandler       0x08005c3f         Code  Wk  startup_stm32f10x_hd.o [1]
+USART2_IRQHandler       0x08005c43         Code  Wk  startup_stm32f10x_hd.o [1]
+USART3_IRQHandler       0x08005c47         Code  Wk  startup_stm32f10x_hd.o [1]
+USART_Cmd               0x0800515d   0x14  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus     0x08005179    0xe  Code  Gb  stm32f10x_usart.o [1]
+USART_Init              0x080050e1   0x78  Code  Gb  stm32f10x_usart.o [1]
+USART_InitStructure     0x20000850   0x10  Data  Gb  main.o [1]
+USART_SendData          0x08005171    0x8  Code  Gb  stm32f10x_usart.o [1]
+USART_printf_init       0x08003dcd   0x20  Code  Gb  main.o [1]
+USBWakeUp_IRQHandler    0x08005c53         Code  Wk  startup_stm32f10x_hd.o [1]
+USB_HP_CAN1_TX_IRQHandler
+                        0x08005bf7         Code  Wk  startup_stm32f10x_hd.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x08005bfb         Code  Wk  startup_stm32f10x_hd.o [1]
+UsageFault_Handler      0x08005a83    0x2  Code  Gb  stm32f10x_it.o [1]
+VS_Get_ByteRate         0x08003a89    0x6  Code  Gb  VS10XX.o [1]
+VS_Get_EndFillByte      0x08003a9d    0x8  Code  Gb  VS10XX.o [1]
+VS_HD_Reset             0x080039b1   0x44  Code  Gb  VS10XX.o [1]
+VS_Init                 0x080038f5   0x4c  Code  Gb  VS10XX.o [1]
+VS_RD_Reg               0x08003a39   0x4a  Code  Gb  VS10XX.o [1]
+VS_Reset_DecodeTime     0x08003b61   0x14  Code  Gb  VS10XX.o [1]
+VS_Restart_Play         0x08003ad9   0x88  Code  Gb  VS10XX.o [1]
+VS_SPI_SpeedLow         0x080038ed    0x6  Code  Gb  VS10XX.o [1]
+VS_Send_MusicData       0x08003aa5   0x2c  Code  Gb  VS10XX.o [1]
+VS_Set_Vol              0x08003b75   0x10  Code  Gb  VS10XX.o [1]
+VS_Soft_Reset           0x08003941   0x6e  Code  Gb  VS10XX.o [1]
+VS_WR_Cmd               0x080039f5   0x44  Code  Gb  VS10XX.o [1]
+WWDG_IRQHandler         0x08005bab         Code  Wk  startup_stm32f10x_hd.o [1]
+_EncodingSb_Mbtowc      0x080056d5   0x34  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x080056b5   0x20  Code  Gb  xencoding_sb.o [3]
+_GenldDefault           0x080023b5  0x250  Code  Lc  xprintffull.o [3]
+_IsdstStr               0x20001534    0x4  Data  Gb  setlocale.o [3]
+_LdtobDefault           0x08001f9d  0x418  Code  Lc  xprintffull.o [3]
+_LitobDefault           0x08001e91  0x10c  Code  Lc  xprintffull.o [3]
+_LocaleC_lconv          0x08005758   0x48  Data  Gb  xlocale_c.o [3]
+_LocaleEncoding         0x08005ad1   0x10  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x20001544   0x50  Data  Lc  setlocale.o [3]
+_Locale_LconvArray      0x20001540    0x4  Data  Gb  setlocale.o [3]
+_Locale_Profile         0x20001510   0x1c  Data  Gb  setlocale.o [3]
+_Locale_lconv           0x2000160c   0x48  Data  Gb  localeconv.o [3]
+_Mbtowc                 0x080059a9   0x20  Code  Gb  xmbtowc.o [3]
+_Printf                 0x08001629  0x59c  Code  Gb  xprintffull.o [3]
+_Prout                  0x08005a91   0x16  Code  Gb  xprout.o [3]
+_PutcharsDefault        0x08002605   0x32  Code  Lc  xprintffull.o [3]
+_PutstrDefault          0x08001bc5  0x2cc  Code  Lc  xprintffull.o [3]
+_TzoneStr               0x2000152c    0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x08005a01   0x1a  Code  Gb  xwctomb.o [3]
+__aeabi_cdcmple         0x08005841         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x08005871         Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x0800565d         Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x08005689         Code  Gb  DblToI32.o [4]
+__aeabi_dadd            0x08004ce1         Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x08003b85         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08003f9d         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x08004141         Code  Gb  DblSub.o [4]
+__aeabi_i2d             0x080058a1         Code  Gb  I32ToDbl.o [4]
+__aeabi_ldiv0           0x08005b85         Code  Gb  I64DivZer.o [4]
+__aeabi_ldivmod         0x080046c5         Code  Gb  I64DivMod.o [4]
+__aeabi_memclr          0x08005b79         Code  Gb  ABImemclr.o [4]
+__aeabi_memclr4         0x08005b71         Code  Gb  ABImemclr4.o [4]
+__aeabi_memcpy          0x080054c1         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4         0x080054db         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8         0x080054db         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset          0x0800559d         Code  Gb  ABImemset.o [4]
+__aeabi_memset4         0x080057a1         Code  Gb  ABImemset48.o [4]
+__aeabi_memset8         0x080057a1         Code  Gb  ABImemset48.o [4]
+__aeabi_ui2d            0x080058b5         Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x080046d9         Code  Gb  I64DivMod.o [4]
+__call_dtors            0x08005559    0x4  Code  Gb  cppinit.o [3]
+__cstart_call_dtors     0x08005b07         Code  Gb  cexit.o [4]
+__cxa_atexit            0x08005531   0x28  Code  Gb  cppinit.o [3]
+__cxa_finalize          0x0800555d   0x3c  Code  Gb  cppinit.o [3]
+__data_Aldata           0x20000870    0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x080058d1   0x28  Code  Gb  xgetmemchunk.o [3]
+__exit                  0x08005abd   0x14  Code  Gb  exit.o [5]
+__iar_Dnorm             0x0800502d   0xb4  Code  Gb  xdnorm.o [3]
+__iar_Dscale            0x0800490d  0x10c  Code  Gb  xdscale.o [3]
+__iar_Locksyslock       0x080052d5   0x4c  Code  Gb  xsyslock.o [3]
+__iar_Mbcurmax          0x08005b2d    0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x08005605         Code  Gb  memchr.o [4]
+__iar_Memset            0x0800559d         Code  Gb  ABImemset.o [4]
+__iar_Memset4_word      0x080057a9         Code  Gb  ABImemset48.o [4]
+__iar_Memset8_word      0x080057a9         Code  Gb  ABImemset48.o [4]
+__iar_Memset_word       0x080055a5         Code  Gb  ABImemset.o [4]
+__iar_Mtxdst            0x08005817    0x4  Code  Gb  MtxWrapper.o [3]
+__iar_Mtxinit           0x08005811    0x6  Code  Gb  MtxWrapper.o [3]
+__iar_Mtxlock           0x08005825    0x6  Code  Gb  MtxWrapper.o [3]
+__iar_Mtxunlock         0x0800582b    0x6  Code  Gb  MtxWrapper.o [3]
+__iar_Stdout            0x20001654   0x40  Data  Gb  xfiles.o [3]
+__iar_Strchr            0x08005a65         Code  Gb  strchr.o [4]
+__iar_Tls_setup__IsdstStr
+                        0x20001538    0x4  Data  Gb  setlocale.o [3]
+__iar_Tls_setup__Locale_Profile
+                        0x2000153c    0x4  Data  Gb  setlocale.o [3]
+__iar_Tls_setup__Locale_lconv
+                        0x20001608    0x4  Data  Gb  localeconv.o [3]
+__iar_Tls_setup__TzoneStr
+                        0x20001530    0x4  Data  Gb  setlocale.o [3]
+__iar_Unlocksyslock     0x08005321   0x14  Code  Gb  xsyslock.o [3]
+__iar_d2uiz             0x08005693         Code  Gb  DblToI32.o [4]
+__iar_dadd              0x08004cf3         Code  Gb  DblAdd.o [4]
+__iar_data_init2        0x08005989   0x20  Code  Gb  data_init2.o [4]
+__iar_dsub              0x08004153         Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x08004165         Code  Gb  DblSub.o [4]
+__iar_packbits_init2    0x08005187   0x94  Code  Gb  packbits_init2.o [4]
+__iar_program_start     0x08005a4d         Code  Gb  cmain.o [4]
+__iar_sh_stdout_close   0x080059e5   0x16  Code  Gb  iarwstd.o [5]
+__iar_sh_stdout_handle  0x2000088c    0x4  Data  Lc  iarwstd.o [5]
+__iar_ui2d              0x080058b7         Code  Gb  I32ToDbl.o [4]
+__iar_zero_init2        0x08005a1b   0x1a  Code  Gb  zero_init2.o [4]
+__low_level_init        0x080059cb         Code  Gb  startup_stm32f10x_hd.o [1]
+__vector_table          0x08000000         Data  Gb  startup_stm32f10x_hd.o [1]
+_exit                   0x08005b05         Code  Gb  cexit.o [4]
+_main                   0x08005a5f         Code  Gb  cmain.o [4]
+br                      0x20001096    0x2  Data  Gb  main.o [1]
+clearlocks              0x080052ad   0x26  Code  Lc  xsyslock.o [3]
+clust2sect              0x08002777   0x18  Code  Gb  ff.o [1]
+create_chain            0x080029b9   0xa8  Code  Lc  ff.o [1]
+create_name             0x08002c69  0x124  Code  Lc  ff.o [1]
+databuf                 0x2000109c    0x4  Data  Gb  main.o [1]
+delay                   0x080036e3   0x1e  Code  Gb  lcd.o [1]
+delay_init              0x08005709   0x1a  Code  Gb  delay.o [1]
+delay_ms                0x08005723    0x8  Code  Gb  delay.o [1]
+delay_us                0x0800572b    0x6  Code  Gb  delay.o [1]
+dir_next                0x08002ae7   0xe6  Code  Lc  ff.o [1]
+dir_register            0x08002bfd   0x6c  Code  Lc  ff.o [1]
+dir_sdi                 0x08002a61   0x86  Code  Lc  ff.o [1]
+disk_initialize         0x08004439   0xd0  Code  Gb  diskio.o [1]
+disk_ioctl              0x08004581    0x4  Code  Gb  diskio.o [1]
+disk_read               0x08004509   0x34  Code  Gb  diskio.o [1]
+disk_status             0x08004435    0x4  Code  Gb  diskio.o [1]
+disk_write              0x0800453d   0x44  Code  Gb  diskio.o [1]
+div                     0x08005b13    0xe  Code  Gb  div.o [3]
+exit                    0x08005b7f    0x6  Code  Gb  exit.o [3]
+f_close                 0x080035b1   0x18  Code  Gb  ff.o [1]
+f_mount                 0x08003241   0x4a  Code  Gb  ff.o [1]
+f_open                  0x08003291  0x138  Code  Gb  ff.o [1]
+f_opendir               0x080035c9   0x60  Code  Gb  ff.o [1]
+f_read                  0x080033c9  0x14c  Code  Gb  ff.o [1]
+f_sync                  0x08003515   0x9c  Code  Gb  ff.o [1]
+fac_ms                  0x20000892    0x2  Data  Lc  delay.o [1]
+fac_us                  0x20000890    0x1  Data  Lc  delay.o [1]
+file                    0x200012d0  0x224  Data  Gb  main.o [1]
+find_volume             0x08002e7d  0x390  Code  Lc  ff.o [1]
+follow_path             0x08002d8d   0xb2  Code  Lc  ff.o [1]
+fputc                   0x08003ded   0x24  Code  Gb  main.o [1]
+free                    0x08005339   0x88  Code  Gb  xxmemxfree.o [3]
+fs                      0x200010a0  0x230  Data  Gb  main.o [1]
+get_fat                 0x0800278f   0xd6  Code  Gb  ff.o [1]
+get_fattime             0x08004585    0x4  Code  Gb  diskio.o [1]
+get_ldnumber            0x08002e3f   0x3e  Code  Lc  ff.o [1]
+i                       0x20001098    0x2  Data  Gb  main.o [1]
+ld_clust                0x08002bcd   0x1e  Code  Lc  ff.o [1]
+localeconv              0x08005aa9   0x14  Code  Gb  localeconv.o [3]
+main                    0x08003e11  0x164  Code  Gb  main.o [1]
+malloc                  0x08004f71   0xbc  Code  Gb  xxmemxmalloc.o [3]
+mem_cpy                 0x08002639   0x10  Code  Lc  ff.o [1]
+memchr                  0x08005605         Code  Gb  memchr.o [4]
+move_window             0x08002697   0x34  Code  Lc  ff.o [1]
+mtx                     0x20000840   0x10  Data  Lc  xsyslock.o [3]
+mtxdst                  0x20000880    0x4  Data  Lc  MtxWrapper.o [3]
+mtxinit                 0x2000087c    0x4  Data  Lc  MtxWrapper.o [3]
+mtxlock                 0x20000884    0x4  Data  Lc  MtxWrapper.o [3]
+mtxunlock               0x20000888    0x4  Data  Lc  MtxWrapper.o [3]
+next_abi_dtor_rec       0x200016b8    0x4  Data  Lc  cppinit.o [3]
+obuf                    0x200007d4   0x50  Data  Lc  xfiles.o [3]
+power_delay             0x08003719   0x1c  Code  Gb  lcd.o [1]
+printf                  0x08005969   0x20  Code  Gb  printf.o [3]
+put_fat                 0x08002865   0xf6  Code  Gb  ff.o [1]
+putchar                 0x08005b21    0xc  Code  Gb  putchar.o [3]
+remove_chain            0x0800295b   0x5e  Code  Lc  ff.o [1]
+reset_delay             0x08003701   0x18  Code  Gb  lcd.o [1]
+result                  0x20001095    0x1  Data  Gb  main.o [1]
+st_clust                0x08002beb   0x12  Code  Lc  ff.o [1]
+strchr                  0x08005a65         Code  Gb  strchr.o [4]
+strlen                  0x080057d9         Code  Gb  strlen.o [4]
+sync_fs                 0x080026cb   0xac  Code  Lc  ff.o [1]
+sync_window             0x08002649   0x4e  Code  Lc  ff.o [1]
+syslock_o               0x2000083c    0x4  Data  Lc  xsyslock.o [3]
+validate                0x0800320d   0x34  Code  Lc  ff.o [1]
+
+
+[1] = C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\ewarmv5\STM3210E debug\Obj
+[2] = command line
+[3] = dl7M_tl_if.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  22 886 bytes of readonly  code memory
+   2 318 bytes of readonly  data memory
+   5 820 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

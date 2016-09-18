@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\Project.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>1</name>
+      <member>
+        <project>Project</project>
+        <configuration>STM3210E debug</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>Project/STM3210E debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>256</Column0><Column1>27</Column1><Column2>27</Column2><Column3>1242260</Column3></ColumnWidths>
+      <PreferedWindows><Position>4</Position><ScreenPosX>7</ScreenPosX><ScreenPosY>101</ScreenPosY><Windows/></PreferedWindows></Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>571</ColumnWidth1><ColumnWidth2>249</ColumnWidth2><ColumnWidth3>62</ColumnWidth3></Build>
+    <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1245</ColumnWidth1></Debug-Log><TerminalIO/><Disassembly><MixedMode>1</MixedMode><CodeCovShow>0</CodeCovShow><InstrProfShow>0</InstrProfShow></Disassembly></Static>
+    <Windows>
+      
+      
+    <Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-24844-10594</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-4812-16700</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd3><Tabs><Tab><Identity>TabID-13624-27562</Identity><TabName>Workspace</TabName><Factory>Workspace</Factory><Session><NodeDict><ExpandedNode>Project</ExpandedNode><ExpandedNode>Project/CMSIS</ExpandedNode><ExpandedNode>Project/SDCard</ExpandedNode><ExpandedNode>Project/SDCard/FF11</ExpandedNode><ExpandedNode>Project/SDCard/stm32_eval_sdio_sd.c</ExpandedNode><ExpandedNode>Project/StdPeriph_Driver</ExpandedNode><ExpandedNode>Project/User</ExpandedNode><ExpandedNode>Project/User/ff10c</ExpandedNode><ExpandedNode>Project/VS10XX</ExpandedNode></NodeDict></Session></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\main.c</Filename><XPos>0</XPos><YPos>126</YPos><SelStart>2897</SelStart><SelEnd>2897</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\usart_printf.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>1703</SelStart><SelEnd>1703</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\VS10XX\VS10XX.c</Filename><XPos>0</XPos><YPos>3</YPos><SelStart>10861</SelStart><SelEnd>10884</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>C:\Users\Chriz\Desktop\5678BPHKUSTinfo\project\lcd.c</Filename><XPos>0</XPos><YPos>691</YPos><SelStart>30042</SelStart><SelEnd>30042</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-01d71e70><key>iaridepm.enu1</key></Toolbar-01d71e70></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>525</Bottom><Right>347</Right><x>-2</x><y>-2</y><xscreen>256</xscreen><yscreen>282</yscreen><sizeHorzCX>213333</sizeHorzCX><sizeHorzCY>360614</sizeHorzCY><sizeVertCX>290833</sizeVertCX><sizeVertCY>673913</sizeVertCY></Rect></Wnd3></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>212</Bottom><Right>1202</Right><x>-2</x><y>-2</y><xscreen>1204</xscreen><yscreen>214</yscreen><sizeHorzCX>1003333</sizeHorzCX><sizeHorzCY>273657</sizeHorzCY><sizeVertCX>561667</sizeVertCX><sizeVertCY>370844</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
